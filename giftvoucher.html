@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Voucher - eComart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2f3f7;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .sidebar {
+            background: #fff;
+            min-height: 100vh;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar a:hover, .sidebar a.active {
+            background: #e9f0ff;
+            border-left: 3px solid #007bff;
+            color: #007bff;
+        }
+        .coupon-box {
+            background: #222;
+            color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .coupon-box img {
+            height: 80px;
+        }
+        .coupon-box h5 {
+            color: #1e90ff;
+        }
+        .btn-outline-light {
+            border-radius: 30px;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://i.imgur.com/XHz8H5b.png" alt="eComart" width="120"></a>
+            <form class="d-flex w-50">
+                <input class="form-control me-2" type="search" placeholder="Search Product" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <div>
+                <a href="#" class="btn btn-link">Compare</a>
+                <a href="#" class="btn btn-link">Wishlist</a>
+                <a href="#" class="btn btn-link">Cart</a>
+            </div>
+        </div>
+        
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar p-3">
+                <a href="#">My Profile</a>
+                <a href="#">Edit Profile</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Notification</a>
+                <a href="#">Order History</a>
+                <a class="active" href="#">Gift Voucher</a>
+                <a href="#">Change Password</a>
+                <a href="#">Logout</a>
+            </div>
+            <div class="col-md-9 p-4">
+                <h4>Coupons Code</h4>
+                <hr>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="coupon-box">
+                            <div>
+                                <h5>25% OFF</h5>
+                                <p>On payment with visa card</p>
+                                <button class="btn btn-outline-light">Get Code</button>
+                            </div>
+                            <img src="images/shoes.jpg" alt="Shoes">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="coupon-box">
+                            <div>
+                                <h5>16% OFF</h5>
+                                <p>Only Sixteen independent of BD</p>
+                                <button class="btn btn-outline-light">Get Code</button>
+                            </div>
+                            <img src="images/wt.jpg" alt="Watch">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="coupon-box">
+                            <div>
+                                <h5>10% OFF</h5>
+                                <p>All men clothes offer discount</p>
+                                <button class="btn btn-outline-light">Get Code</button>
+                            </div>
+                            <img src="images/cloths.jpg" alt="Men Clothes">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="coupon-box">
+                            <div>
+                                <h5>35% OFF</h5>
+                                <p>All women clothes offer discount</p>
+                                <button class="btn btn-outline-light">Get Code</button>
+                            </div>
+                            <img src="images/wc.jpg" alt="Women Clothes">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="coupon-box">
+                            <div>
+                                <h5>45% OFF</h5>
+                                <p>Receive Cashback on all order</p>
+                                <button class="btn btn-outline-light">Get Code</button>
+                            </div>
+                            <img src="images/hd.jpg" alt="Headphones">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="coupon-box">
+                            <div>
+                                <h5>21% OFF</h5>
+                                <p>Receive cashback on all order</p>
+                                <button class="btn btn-outline-light">Get Code</button>
+                            </div>
+                            <img src="images/laptop.jpg" alt="Laptop">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

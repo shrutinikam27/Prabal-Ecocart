@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,11 +77,11 @@
 
       <div class="col-md-9 d-flex align-items-center justify-content-end">
         <nav>
-          <a href="/index.html" class="me-3">Home</a>
-          <a href="shop/shop.html" class="me-3">Shop</a>
-          <a href="giftvoucher.html" class="me-3">Gift Voucher</a>
-          <a href="#" class="me-3">Blog</a>
-          <a href="/about/about.html">About Us</a>
+          <a href="/index.php" class="me-3">Home</a>
+          <a href="shop/shop.php" class="me-3">Shop</a>
+          <a href="giftvoucher.php" class="me-3">Gift Voucher</a>
+          <a href="./blog/blog.php" class="me-3">Blog</a>
+          <a href="/about/about.php">About Us</a>
         </nav>
       </div>
     </div>

@@ -17,7 +17,7 @@ session_start();
 <body>
   <div class="container" id="signup" style="display:none;">
     <h1 class="form-title">Register</h1>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="" action=""<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
       <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
       <div class="input-group">
         <i class="fas fa-user"></i>
@@ -60,7 +60,7 @@ session_start();
 
   <div class="container" id="signIn">
     <h1 class="form-title">Sign In</h1>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
       <div id="signInMessage" class="messageDiv" style="display:none;"></div>
       <div class="input-group">
         <i class="fas fa-envelope"></i>
@@ -111,6 +111,26 @@ session_start();
       signInForm.style.display = "block";
       signUpForm.style.display = "none";
     });
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    const user = userCredential.user;
+    firebase.database().ref("users/" + user.uid).set({
+      name: name,
+      email: email,
+      createdAt: Date.now()
+    });
+  });
+
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    const user = userCredential.user;
+    firebase.firestore().collection("users").doc(user.uid).set({
+      name: name,
+      email: email,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp()
+    });
+  });
   </script>
 </body>
 

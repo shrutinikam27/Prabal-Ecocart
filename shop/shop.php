@@ -91,11 +91,11 @@
                 </div>
                 <div class="col-md-9 d-flex align-items-center justify-content-end">
                     <nav>
-                        <a href="/index.html" class="me-3">Home</a>
-                        <a href="shop/shop.html" class="me-3">Shop</a>
-                        <a href="/giftvoucher.html" class="me-3">Gift Voucher</a>
-                        <a href="/blog/blog.html" class="me-3">Blog</a>
-                        <a href="about.html">About Us</a>
+                        <a href="/index.php" class="me-3">Home</a>
+                        <a href="shop/shop.php" class="me-3">Shop</a>
+                        <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
+                        <a href="/blog/blog.php" class="me-3">Blog</a>
+                        <a href="/about/about.php">About Us</a>
                     </nav>
                 </div>
             </div>
@@ -104,205 +104,110 @@
 
 
 
-    <div class="sg-page-content">
-
-        <section class="about-section">
-            <div class="container">
-                <div class="sa-box">
-                    <div class="page-title">
-                        <h1>About Us</h1>
+    <!-- Product Grid Section (Centered with 6 Images) -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <!-- Sort and Show Controls -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <label class="form-label me-2">Sort by:</label>
+                        <select class="form-select d-inline-block w-auto">
+                            <option>Default Sort</option>
+                        </select>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="about-text animate__animated animate__fadeInUp">
-                                <h2>Who we are</h2>
-                                <p>
-                                    At EcoCart, we believe that sustainable shopping should be simple, transparent, and
-                                    accessible to everyone. Our mission is to empower conscious consumers by providing
-                                    detailed eco-ratings on products based on materials, manufacturing practices, and
-                                    brand ethics. Whether you're comparing options or
-                                    searching for greener alternatives, EcoCart is your go-to assistant for making
-                                    informed, environmentally friendly purchases. By blending smart technology with a
-                                    passion for sustainability, we help you shop smarter—and greener—one product at a
-                                    time.
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div class="fun-fact">
-                                            <h3>15+</h3>
-                                            <p>Business Year</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="fun-fact">
-                                            <h3>30+</h3>
-                                            <p>Design Brands</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="fun-fact">
-                                            <h3>100+</h3>
-                                            <p>Team Members</p>
-                                        </div>
-                                    </div>
-                                </div><!-- /.row -->
-                                <ul class="global-list">
-
-                                </ul>
-                            </div><!-- /.about-text -->
-                        </div>
-                        <div class="col-md-6">
-                            <div class="gallery-content animate__animated animate__fadeInUp">
-                                <h2>Our Gallery</h2>
-                                <div class="gallery-slider">
-                                    <div class="thumb">
-                                        <img src="../images/1.jpg" alt="Image" class="img-fluid">
-                                    </div>
-
-                                </div>
-                            </div><!-- /.gallery-content -->
-                        </div>
-                    </div><!-- /.row -->
-                </div><!-- /.sa-box -->
-            </div><!-- /.container -->
-        </section><!-- /.about-section -->
-
-        <section class="sg-convenience mb-3">
-            <div class="container">
-                <div class="sa-box">
-                    <ul class="global-list convenience-slider">
-                        <li>
-                            <div class="convenience">
-                                <div class="icon">
-                                    <i class="fa-solid fa-truck"></i>
-                                </div>
-                                <div class="text">
-                                    <span>Free Delivery</span>
-                                    <p>For all orders over 5%</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="convenience">
-                                <div class="icon">
-                                    <i class="fa-solid fa-rotate-left"></i>
-                                </div>
-                                <div class="text">
-                                    <span>30 Days Return</span>
-                                    <p>If goods have problems</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="convenience">
-                                <div class="icon">
-                                    <i class="fa-regular fa-credit-card"></i>
-                                </div>
-                                <div class="text">
-                                    <span>Secure Payment</span>
-                                    <p>100% secure payment</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="convenience">
-                                <div class="icon">
-                                    <i class="fa-solid fa-headset"></i>
-                                </div>
-                                <div class="text">
-                                    <span>24/7 Support</span>
-                                    <p>Dedicated Support</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div><!-- /.sa-box -->
-            </div><!-- /.container -->
-        </section><!-- /.sg-convenience -->
-        <section class="sg-testimonial pt-0">
-            <div class="container">
-                <div class="sa-box mb-3">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="testimonial-title">
-                                <h2>Happy Clients</h2>
-                            </div>
-                            <div class="testimonial-slider">
-                                <div class="testimonial">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-thumb">
-                                            <img src="../images/prof2.avif" alt="Image" class="img-fluid">
-                                        </div>
-                                        <div class="testimonial-text">
-                                            <h5>Pratik Pawar</h5>
-                                            <p>I love how it highlights eco-friendly products and even suggests greener
-                                                alternatives when I’m browsing. The product ratings are super helpful,
-                                                and I’ve discovered so many brands I wouldn’t have found otherwise. It’s
-                                                honestly changed the way I shop.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-thumb">
-                                            <img src="../images/prof1.avif" alt="Image" class="img-fluid">
-                                        </div>
-                                        <div class="testimonial-text">
-                                            <h5>Sanjana More</h5>
-                                            <p>It feels great to know that just by checking a box at checkout, I’m
-                                                helping offset the environmental impact of my order. It’s a small step
-                                                that makes a big difference, and EcoCart makes it effortless. I wish
-                                                more stores offered this!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="testimonial">
-                                    <div class="testimonial-content">
-                                        <div class="testimonial-thumb">
-                                            <img src="../images/prof4.jpg" alt="Image" class="img-fluid">
-                                        </div>
-                                        <div class="testimonial-text">
-                                            <h5>Prajakta pujari</h5>
-                                            <p>The site design is clean and intuitive, and I love the little eco-badges
-                                                that quickly show how sustainable a product is. It really takes the
-                                                guesswork out of eco-conscious shopping and helps me feel more confident
-                                                in my purchases.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-                </div><!-- /.sa-box -->
-            </div><!-- /.container -->
-        </section><!-- /.sg-testimonial-section -->
-
-    </div><!-- /.sg-page-content -->
-
-    <section class="subscribe-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="subscribe-text">
-                        <div class="icon">
-                            <span><i class="fa-regular fa-envelope"></i></span>
-                        </div>
-                        <div class="text">
-                            <p>Subscribe to our newsletter</p>
-                            <span>Get all the latest information on Events, Sales and Offers.</span>
-                        </div>
+                    <div>
+                        <label class="form-label me-2">Show by:</label>
+                        <select class="form-select d-inline-block w-auto">
+                            <option>10</option>
+                        </select>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="subscribe-form">
-                        <form action="#">
-                            <input type="email" placeholder="Enter Email">
-                            <button type="submit">Subscribe</button>
-                        </form>
+
+                <!-- Product Cards -->
+                <div class="row">
+                    <!-- Product Card 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center" style="cursor: pointer;">
+                            <img src="../images/shoes.png" class="card-img-top mx-auto" alt="Shoes"
+                                style="width: 60%; height: auto;">
+                            <div class="card-body">
+                                <div class="text-warning mb-1">★★★★☆</div>
+                                <p><del>$50.00</del> <strong>$25.00</strong></p>
+                                <p class="card-text">Trendy Shoes For Men With High Quality...</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center" style="cursor: pointer;">
+                            <img src="../images/head.png" class="card-img-top mx-auto" alt="Headphones"
+                                style="width: 60%; height: auto;">
+                            <div class="card-body">
+                                <div class="text-warning mb-1">★★★★☆</div>
+                                <p><strong>$30.00</strong></p>
+                                <p class="card-text">Wireless Bluetooth Headphones...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center" style="cursor: pointer;">
+                            <img src="../images/watch.png" class="card-img-top mx-auto" alt="Watch"
+                                style="width: 60%; height: auto;">
+                            <div class="card-body">
+                                <div class="text-warning mb-1">★★★★★</div>
+                                <p><del>$1000.00</del> <strong>$700.00</strong></p>
+                                <p class="card-text">Apple Watch Series 7 45mm Sports Band...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center" style="cursor: pointer;">
+                            <img src="../images/jewelry.png" class="card-img-top mx-auto" alt="Jewelry"
+                                style="width: 60%; height: auto;">
+                            <div class="card-body">
+                                <div class="text-warning mb-1">★★★☆☆</div>
+                                <p><del>$150.00</del> <strong>$85.00</strong></p>
+                                <p class="card-text">Traditional Crystal Wedding Choker Jewelry Set</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center" style="cursor: pointer;">
+                            <img src="../images/speaker.png" class="card-img-top mx-auto" alt="Speaker"
+                                style="width: 60%; height: auto;">
+                            <div class="card-body">
+                                <div class="text-warning mb-1">★★★★★</div>
+                                <p><del>$59.00</del> <strong>$48.00</strong></p>
+                                <p class="card-text">Sony SRS-XB13 Extra BASS Wireless Speaker</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center" style="cursor: pointer;">
+                            <img src="../images/dress.png" class="card-img-top mx-auto" alt="Dress"
+                                style="width: 60%; height: auto;">
+                            <div class="card-body">
+                                <div class="text-warning mb-1">★★★★★</div>
+                                <p><del>$150.00</del> <strong>$70.00</strong></p>
+                                <p class="card-text">Elegant Wedding Dress</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.subscribe-section -->
+            </div>
+        </div>
+    </div>
 
     <footer class="footer-section bg-dark text-light pt-5">
         <div class="container">
@@ -393,11 +298,11 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <ul class="list-inline mb-0">
-                            <li class="list-inline-item"><img src="images/card1.png" alt="Visa" class="img-fluid"
+                            <li class="list-inline-item"><img src="../images/card1.png" alt="Visa" class="img-fluid"
                                     style="height: 30px;"></li>
-                            <li class="list-inline-item"><img src="images/card2.png" alt="Mastercard" class="img-fluid"
-                                    style="height: 30px;"></li>
-                            <li class="list-inline-item"><img src="images/card3.png" alt="PayPal" class="img-fluid"
+                            <li class="list-inline-item"><img src="../images/card2.png" alt="Mastercard"
+                                    class="img-fluid" style="height: 30px;"></li>
+                            <li class="list-inline-item"><img src="../images/card3.png" alt="PayPal" class="img-fluid"
                                     style="height: 30px;"></li>
                         </ul>
                     </div>
@@ -433,5 +338,9 @@
 </body>
 
 <!-- Mirrored from chtstudio.com/demo/ecomart/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 May 2024 08:58:38 GMT -->
+
+</html>
+
+</body>
 
 </html>

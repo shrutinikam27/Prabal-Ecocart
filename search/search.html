@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    #searchInput {
+      padding: 10px;
+      width: 250px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #searchButton {
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #productList {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      width: 150px;
+    }
+
+    .product-card img {
+      width: 100px;
+      height: auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Search Product</h1>
+
+  <!-- Search Input -->
+  <input type="text" id="searchInput" placeholder="Search Product" />
+  <button id="searchButton">Search</button>
+
+  <!-- Product List -->
+  <div id="productList">
+    <div class="product-card" data-name="Attack Air VaporMax Flyknit 3">
+      <img src="https://via.placeholder.com/100x100?text=Shoes" alt="Shoe Image">
+      <p>Attack Air VaporMax Flyknit 3</p>
+    </div>
+    <div class="product-card" data-name="Nike Revolution 6">
+      <img src="https://via.placeholder.com/100x100?text=Nike" alt="Nike Image">
+      <p>Nike Revolution 6</p>
+    </div>
+    <div class="product-card" data-name="Adidas EcoBoost">
+      <img src="https://via.placeholder.com/100x100?text=Adidas" alt="Adidas Image">
+      <p>Adidas EcoBoost</p>
+    </div>
+  </div>
+  <form class =></form>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const searchButton = document.getElementById("searchButton");
+    const productCards = document.querySelectorAll(".product-card");
+
+    function searchProduct() {
+      const query = searchInput.value.toLowerCase().trim();
+
+      let found = false;
+      productCards.forEach(card => {
+        const name = card.getAttribute("data-name").toLowerCase();
+        if (name.includes(query)) {
+          card.classList.remove("hidden");
+          found = true;
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+
+      // Optional: Show message if no products found
+      if (!found) {
+        alert("No products found.");
+      }
+    }
+
+    searchButton.addEventListener("click", searchProduct);
+
+    searchInput.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        searchProduct();
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -31,70 +31,79 @@
      <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.html">
      <link rel="apple-touch-icon" sizes="57x57" href="images/ico/apple-touch-icon-57-precomposed.png">
      <!-- icons -->
-  
+
+
+<!-- Firebase Authentication SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js"></script>
+
+
   <link rel="stylesheet" href="chatbotmain/styles.css" />
+  
+
+
   <body>
 
-  <header class="bg-white shadow-sm mb-3">
-    <div class="container-fluid">
-      <div class="row py-2 px-3 bg-light">
-        <div class="col-md-6">
-          <i class="bi bi-telephone-fill"></i> Live Chat: +12 345 678 99
-        </div>
-        <div class="col-md-6 text-end">
-          <a href="#" class="text-decoration-none">
-            <i class="bi bi-person-circle"></i> Sign In/Register
-          </a>
-        </div>
-      </div>
-
-      <div class="row align-items-center py-3 px-3">
-        <div class="col-md-3 fw-bold fs-4 text-primary">eCocart</div>
-        <div class="col-md-6">
-          <div class="position-relative">
-            <input type="text" class="form-control" placeholder="Search Product" />
-            <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 search-icon"></i>
-          </div>
-        </div>
-        <div class="col-md-3 text-end">
-          <div class="d-flex justify-content-end align-items-center header-icons">
-            <a href="#" class="me-3">
-              <i class="bi bi-bar-chart"></i> Compare
-            </a>
-            <a href="#" class="me-3">
-              <i class="bi bi-heart"></i> Wishlist
-            </a>
-            <a href="#">
-              <i class="bi bi-cart"></i> Cart
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row bg-secondary-subtle px-3 py-2">
-        <div class="col-md-3 position-relative">
-          <button class="btn btn-outline-secondary w-100" id="toggleButton">☰ All Categories</button>
-          <ul class="list-group position-absolute d-none" id="categoryMenu">
-            <li class="list-group-item"><a href="#" data-category="All Offers">All Offers</a></li>
-            <li class="list-group-item"><a href="#" data-category="Fashion & Clothing">Fashion & Clothing</a></li>
-            <li class="list-group-item"><a href="#" data-category="Computer Accessories">Computer Accessories</a></li>
-            <li class="list-group-item"><a href="#" data-category="Shoes">Shoes</a></li>
-            <li class="list-group-item"><a href="#" data-category="Jewelry & Watches">Jewelry & Watches</a></li>
-            <li class="list-group-item"><a href="#" data-category="Sports & Outdoor">Sports & Outdoor</a></li>
-          </ul>
-        </div>
-        <div class="col-md-9 d-flex align-items-center justify-content-end">
-          <nav>
-            <a href="index.html" class="me-3">Home</a>
-            <a href="shop/shop.html" class="me-3">Shop</a>
-            <a href="/giftvoucher.html" class="me-3">Gift Voucher</a>
-            <a href="#" class="me-3">Blog</a>
-            <a href="about/about.html">About Us</a>
-          </nav>
-        </div>
-      </div>
+    <header class="bg-white shadow-sm mb-3">
+        <div class="container-fluid">
+          <div class="row py-2 px-3 bg-light">
+            <div class="col-md-6">
+              <i class="bi bi-telephone-fill"></i> Live Chat: +12 345 678 99
+            </div>
+            <div class="col-md-6 text-end">
+<a href="/auth.html" id="auth-link" class="text-decoration-none">
+  <i class="bi bi-person-circle"></i> Sign In/Register
+</a>
+</div>
     </div>
-  </header>
+      
+          <div class="row align-items-center py-3 px-3">
+            <div class="col-md-3 fw-bold fs-4 text-primary">eCocart</div>
+            <div class="col-md-6">
+              <div class="position-relative">
+                <input type="text" class="form-control" placeholder="Search Product" />
+                <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 search-icon"></i>
+              </div>
+            </div>
+            <div class="col-md-3 text-end">
+              <div class="d-flex justify-content-end align-items-center header-icons">
+                <a href="#" class="me-3">
+                  <i class="bi bi-bar-chart"></i> Compare
+                </a>
+                <a href="#" class="me-3">
+                  <i class="bi bi-heart"></i> Wishlist
+                </a>
+                <a href="#">
+                  <i class="bi bi-cart"></i> Cart
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row bg-secondary-subtle px-3 py-2">
+            <div class="col-md-3 position-relative">
+              <button class="btn btn-outline-secondary w-100" id="toggleButton">☰ All Categories</button>
+              <ul class="list-group position-absolute d-none" id="categoryMenu">
+                <li class="list-group-item"><a href="#" data-category="All Offers">All Offers</a></li>
+                <li class="list-group-item"><a href="#" data-category="Fashion & Clothing">Fashion & Clothing</a></li>
+                <li class="list-group-item"><a href="#" data-category="Computer Accessories">Computer Accessories</a></li>
+                <li class="list-group-item"><a href="#" data-category="Shoes">Shoes</a></li>
+                <li class="list-group-item"><a href="#" data-category="Jewelry & Watches">Jewelry & Watches</a></li>
+                <li class="list-group-item"><a href="#" data-category="Sports & Outdoor">Sports & Outdoor</a></li>
+              </ul>
+            </div>
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+              <nav>
+                <a href="index.html" class="me-3">Home</a>
+                <a href="shop/shop.html" class="me-3">Shop</a>
+                <a href="/giftvoucher.html" class="me-3">Gift Voucher</a>
+                <a href="" class="me-3">Blog</a>
+                <a href="about/about.html">About Us</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
 
   <section class="hero">
     <div class="hero-overlay">
@@ -1621,8 +1630,11 @@
       <button type="submit">Send</button>
     </form>
   </div>
-
+  
+  
   <script src="chatbotmain/script.js"></script>
+  
+
 </body>
 
 

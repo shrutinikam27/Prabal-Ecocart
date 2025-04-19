@@ -1,5 +1,4 @@
 
-<script>
     const categories = [
     "Accessories",
     "Fashion",
@@ -26,4 +25,3 @@
     li.appendChild(a);
     categoryList.appendChild(li);
   });
-</script>

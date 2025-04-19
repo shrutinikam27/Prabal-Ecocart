@@ -49,71 +49,56 @@ session_start();
 
 <body>
 
-<header class="bg-white shadow-sm mb-3">
-    <div class="container-fluid">
-        <div class="row py-2 px-3 bg-light">
-            <div class="col-md-6">
-                <i class="bi bi-telephone-fill"></i> Live Chat: +12 345 678 99
-            </div>
-            <div class="col-md-6 text-end">
-                <a href="auth.php" id="auth-link" class="text-decoration-none">
-                    <i class="bi bi-person-circle"></i> Sign In/Register
-                </a>
-            </div>
-        </div> <!-- This was not closed in your code -->
-    </div>
-</header>
-
-            <div class="row align-items-center py-3 px-3">
-                <div class="col-md-3 fw-bo  ld fs-4 text-primary">eCocart</div>
+    <header class="bg-white shadow-sm mb-3">
+        <div class="container-fluid">
+            <div class="row py-2 px-3 bg-light">
                 <div class="col-md-6">
-                    <div class="position-relative">
-                        <input type="text" class="form-control" placeholder="Search Product" />
-                        <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 search-icon"></i>
-                    </div>
+                    <i class="bi bi-telephone-fill"></i> Live Chat: +12 345 678 99
                 </div>
-                <div class="col-md-3 text-end">
-                    <div class="d-flex justify-content-end align-items-center header-icons">
-                        <a href="#" class="me-3">
-                            <i class="bi bi-bar-chart"></i> Compare
-                        </a>
-                        <a href="#" class="me-3">
-                            <i class="bi bi-heart"></i> Wishlist
-                        </a>
-                        <a href="#">
-                            <i class="bi bi-cart"></i> Cart
-                        </a>
-                    </div>
+                <div class="col-md-6 text-end">
+                    <a href="auth.php" id="auth-link" class="text-decoration-none">
+                        <i class="bi bi-person-circle"></i> Sign In/Register
+                    </a>
                 </div>
-            </div>
+            </div> <!-- This was not closed in your code -->
+        </div>
+    </header>
 
-            <div class="row bg-secondary-subtle px-3 py-2">
-                <div class="col-md-3 position-relative">
-                    <button class="btn btn-outline-secondary w-100" id="toggleButton">☰ All Categories</button>
-                    <ul class="list-group position-absolute d-none" id="categoryMenu">
-                        <li class="list-group-item"><a href="#" data-category="All Offers">All Offers</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Fashion & Clothing">Fashion &
-                                Clothing</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Computer Accessories">Computer
-                                Accessories</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Shoes">Shoes</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Jewelry & Watches">Jewelry & Watches</a>
-                        </li>
-                        <li class="list-group-item"><a href="#" data-category="Sports & Outdoor">Sports & Outdoor</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-9 d-flex align-items-center justify-content-end">
-                    <nav>
-                        <a href="index.php" class="me-3">Home</a>
-                        <a href="shop/shop.php" class="me-3">Shop</a>
-                        <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
-                        <a href="blog/blog.php" class="me-3">Blog</a>
-                        <a href="about/about.php">About Us</a>
-                    </nav>
-                </div>
+    <div class="row align-items-center py-3 px-3">
+        <div class="col-md-3 fw-bo  ld fs-4 text-primary">eCocart</div>
+        <div class="col-md-6">
+            <div class="position-relative">
+                <input type="text" class="form-control" placeholder="Search Product" />
+                <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 search-icon"></i>
             </div>
         </div>
+        <div class="col-md-3 text-end">
+            <div class="d-flex justify-content-end align-items-center header-icons">
+                <a href="#" class="me-3">
+                    <i class="bi bi-bar-chart"></i> Compare
+                </a>
+                <a href="#" class="me-3">
+                    <i class="bi bi-heart"></i> Wishlist
+                </a>
+                <a href="#">
+                    <i class="bi bi-cart"></i> Cart
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-9 d-flex align-items-center justify-content-end">
+        <nav>
+            <a href="index.php" class="me-3">Home</a>
+            <a href="shop/shop.php" class="me-3">Shop</a>
+            <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
+            <a href="blog/blog.php" class="me-3">Blog</a>
+            <a href="about/about.php">About Us</a>
+        </nav>
+    </div>
+    </div>
+    </div>
     </header>
 
     <section class="hero">

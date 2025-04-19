@@ -1,3 +1,9 @@
+<?php
+// You can handle form submissions here using $_POST if needed
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

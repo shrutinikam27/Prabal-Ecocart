@@ -1,3 +1,8 @@
+<?php
+// You can handle form submissions here using $_POST if needed
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,32 +78,17 @@
                 </div>
             </div>
 
-            <div class="row bg-secondary-subtle px-3 py-2">
-                <div class="col-md-3 position-relative">
-                    <button class="btn btn-outline-secondary w-100" id="toggleButton">☰ All Categories</button>
-                    <ul class="list-group position-absolute d-none" id="categoryMenu">
-                        <li class="list-group-item"><a href="#" data-category="All Offers">All Offers</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Fashion & Clothing">Fashion &
-                                Clothing</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Computer Accessories">Computer
-                                Accessories</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Shoes">Shoes</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Jewelry & Watches">Jewelry & Watches</a>
-                        </li>
-                        <li class="list-group-item"><a href="#" data-category="Sports & Outdoor">Sports & Outdoor</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-9 d-flex align-items-center justify-content-end">
-                    <nav>
-                        <a href="/index.php" class="me-3">Home</a>
-                        <a href="shop/shop.php" class="me-3">Shop</a>
-                        <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
-                        <a href="/blog/blog.php" class="me-3">Blog</a>
-                        <a href="/about/about.php">About Us</a>
-                    </nav>
-                </div>
+
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <nav>
+                    <a href="/index.php" class="me-3">Home</a>
+                    <a href="shop/shop.php" class="me-3">Shop</a>
+                    <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
+                    <a href="/blog/blog.php" class="me-3">Blog</a>
+                    <a href="/about/about.php">About Us</a>
+                </nav>
             </div>
+        </div>
         </div>
     </header>
 
@@ -119,7 +109,7 @@
                     <div>
                         <label class="form-label me-2">Show by:</label>
                         <select class="form-select d-inline-block w-auto">
-                            <option>10</option>
+                            <option>6</option>
                         </select>
                     </div>
                 </div>

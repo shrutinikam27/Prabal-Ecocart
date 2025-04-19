@@ -1,3 +1,9 @@
+<?php
+// You can handle form submissions here using $_POST if needed
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,28 +75,17 @@
             </div>
 
             <!-- Nav -->
-            <div class="row bg-secondary-subtle px-3 py-2">
-                <div class="col-md-3 position-relative">
-                    <button class="btn btn-outline-secondary w-100" id="toggleButton">☰ All Categories</button>
-                    <ul class="list-group position-absolute d-none" id="categoryMenu">
-                        <li class="list-group-item"><a href="#">All Offers</a></li>
-                        <li class="list-group-item"><a href="#">Fashion & Clothing</a></li>
-                        <li class="list-group-item"><a href="#">Computer Accessories</a></li>
-                        <li class="list-group-item"><a href="#">Shoes</a></li>
-                        <li class="list-group-item"><a href="#">Jewelry & Watches</a></li>
-                        <li class="list-group-item"><a href="#">Sports & Outdoor</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-9 d-flex align-items-center justify-content-end">
-                    <nav>
-                        <a href="/index.php" class="me-3">Home</a>
-                        <a href="shop/shop.php" class="me-3">Shop</a>
-                        <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
-                        <a href="./blog.php" class="me-3">Blog</a>
-                        <a href="about.php">About Us</a>
-                    </nav>
-                </div>
+
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <nav>
+                    <a href="/index.php" class="me-3">Home</a>
+                    <a href="shop/shop.php" class="me-3">Shop</a>
+                    <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
+                    <a href="./blog.php" class="me-3">Blog</a>
+                    <a href="about.php">About Us</a>
+                </nav>
             </div>
+        </div>
         </div>
     </header>
 

@@ -1,5 +1,6 @@
 
-const categories = [
+<script>
+    const categories = [
     "Accessories",
     "Fashion",
     "Shoes",
@@ -9,18 +10,20 @@ const categories = [
     "Men Clothing",
     "Electronics Accessories",
     "Computer Accessories"
-];
+    ];
 
-const categoryList = document.getElementById("categoryList");
+    const categoryList = document.getElementById("categoryList");
 
-categories.forEach(category => {
+  categories.forEach(category => {
     const li = document.createElement("li");
-    li.className = "list-group-item";
     const a = document.createElement("a");
     a.href = "#";
     a.textContent = category;
-    a.className = "text-decoration-none text-primary";
+    a.style.textDecoration = "none";
+    a.style.color = "#007bff";
+    a.addEventListener("mouseover", () => a.style.textDecoration = "underline");
+    a.addEventListener("mouseout", () => a.style.textDecoration = "none");
     li.appendChild(a);
     categoryList.appendChild(li);
-});
-
+  });
+</script>

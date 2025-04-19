@@ -1,69 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eComart</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eComart - Home</title>
+   <!-- CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/animate.min.css">
+   <link rel="stylesheet" href="css/slick.css">
+   <link rel="stylesheet" href="css/structure.css">
+   <link rel="stylesheet" href="css/main.css"> 
+   <link rel="stylesheet" href="css/responsive.css">
+
+   <!-- icons -->
+   <link rel="icon" href="images/ico/favicon.ico"> 
+   <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-precomposed.html">
+   <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.html">
+   <link rel="apple-touch-icon" sizes="57x57" href="images/ico/apple-touch-icon-57-precomposed.png">  
+   <!-- icons -->
 </head>
 <body>
-    <header>
-        <div class="topbar">
-            <div>
-                <span>English</span> | <span>USD</span>
-            </div>
-            <div class="top-links">
-                <span>Live Chat: +12 345 678 99</span>
-                <a href="#">Sign In/Register</a>
-            </div>
-        </div>
-        <div class="navbar">
-            <div class="logo">eComart</div>
-            <input type="text" placeholder="Search Product">
-            <button>Search</button>
-            <div class="icons">
-                <span>Compare (0)</span>
-                <span>Wishlist (0)</span>
-                <span>Cart (3)</span>
-            </div>
-        </div>
-        <nav>
-            <button class="menu-toggle">All Categories</button>
-            <ul class="menu">
-                <li>All Offers</li>
-                <li>Fashion & Clothing</li>
-                <li>Electronic Gadget</li>
-                <li>Skin Care</li>
-                <li>Computer Accessories</li>
-                <li>Cameras</li>
-                <li>Home & Garden</li>
-                <li>Game & Toys</li>
-                <li>Health & Beauty</li>
-                <li>Bag & Lages</li>
-            </ul>
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Gift Voucher</a>
-                <a href="#">Page</a>
-                <a href="#">Blog</a>
-                <a href="#">About Us</a>
-                <a href="#">Track Order</a>
-            </div>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Attack Air VaporMax Flyknit 3</h2>
-            <p>Flat 20% Discount</p>
-            <button>Shop Now</button>
+    <header class="bg-white shadow-sm mb-3">
+        <div class="container-fluid">
+          <div class="row py-2 px-3 bg-light">
+            <div class="col-md-6">
+              <i class="bi bi-telephone-fill"></i> Live Chat: +12 345 678 99
+            </div>
+            <div class="col-md-6 text-end">
+              <a href="#" class="text-decoration-none">
+                <i class="bi bi-person-circle"></i> Sign In/Register
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="hero-img">
-            <img src="shoes.png" alt="Shoes">
-        </div>
-    </section>
+      
+      
 
-    <script src="script.js"></script>
+      <div class="row align-items-center py-3 px-3">
+        <div class="col-md-3 fw-bold fs-4 text-primary">eComart</div>
+        <div class="col-md-6 position-relative">
+            <input type="text" class="form-control" placeholder="Search Product" />
+            <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3"></i>
+          </div>
+          
+          <div class="col-md-3 text-end">
+            <div class="d-flex justify-content-end align-items-center header-icons">
+              <a href="#" class="me-3">
+                <i class="bi bi-bar-chart"></i> Compare
+              </a>
+              <a href="#" class="me-3">
+                <i class="bi bi-heart"></i> Wishlist
+              </a>
+              <a href="#">
+                <i class="bi bi-cart"></i> Cart
+              </a>
+            </div>
+          </div>
+          
+
+      <div class="row bg-secondary-subtle px-3 py-2">
+        <div class="col-md-3 position-relative">
+          <button class="btn btn-outline-secondary w-100" id="toggleButton">☰ All Categories</button>
+          <ul class="list-group position-absolute d-none" id="categoryMenu">
+            <li class="list-group-item">All Offers</li>
+            <li class="list-group-item">Fashion & Clothing</li>
+            <li class="list-group-item">Electronic Gadgets</li>
+            <li class="list-group-item">Skin Care</li>
+            <li class="list-group-item">Computer Accessories</li>
+            <li class="list-group-item">Cameras & Photography</li>
+            <li class="list-group-item">Home & Kitchen</li>
+            <li class="list-group-item">Gaming & Toys</li>
+            <li class="list-group-item">Health & Wellness</li>
+            <li class="list-group-item">Beauty Products</li>
+            <li class="list-group-item">Travel & Luggage</li>
+            <li class="list-group-item">Books & Stationery</li>
+            <li class="list-group-item">Pet Supplies</li>
+            <li class="list-group-item">Sports & Outdoors</li>
+            <li class="list-group-item">Watches & Jewelry</li>
+          </ul>
+        </div>
+        <div class="col-md-9 d-flex align-items-center justify-content-end">
+          <nav>
+            <a href="#" class="me-3">Home</a>
+            <a href="#" class="me-3">Shop</a>
+            <a href="#" class="me-3">Gift Voucher</a>
+            <a href="#" class="me-3">Blog</a>
+            <a href="#">About Us</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2>Attack Air VaporMax Flyknit 3</h2>
+      <p>Flat 20% Discount</p>
+      <button class="btn btn-primary btn-lg">Shop Now</button>
+    </div>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eComart - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header (same as yours, skipped for brevity) -->
+
+  <!-- Carousel Section -->
+  <section class="offers-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="add-banner">
+                    <img src="images/of1.jpg" alt="Image" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="add-banner">
+                    <img src="images/of2.jpg" alt="Image" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="add-banner">
+                    <img src="images/of3.jpg" alt="Image" class="img-fluid">
+                </a>
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.section -->
+  <!-- Popular Categories -->
+  <section class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h4 class="fw-semibold">Popular Categories</h4>
+      <a href="#" class="text-decoration-none text-primary">All Categories <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="row g-4">
+      <!-- Repeat this col for each category -->
+      <div class="col-md-4">
+        <div class="category-card d-flex align-items-center p-3 bg-white rounded shadow-sm">
+          <img src="images/womensCLothing.png" alt="Fashion" class="me-3" height="60" />
+          <span class="fs-6">Women Clothing & Fashion</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category-card d-flex align-items-center p-3 bg-white rounded shadow-sm">
+          <img src="images/laptop.png" alt="Computers" class="me-3" height="60" />
+          <span class="fs-6">Computer & Accessories</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category-card d-flex align-items-center p-3 bg-white rounded shadow-sm">
+          <img src="images/sofa.png" alt="Home" class="me-3" height="60" />
+          <span class="fs-6">Home decoration & Appliance</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category-card d-flex align-items-center p-3 bg-white rounded shadow-sm">
+          <img src="images/necklace.png" alt="Jewelry" class="me-3" height="60" />
+          <span class="fs-6">Jewelry & Watches</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category-card d-flex align-items-center p-3 bg-white rounded shadow-sm">
+          <img src="images/brushes.png" alt="Beauty" class="me-3" height="60" />
+          <span class="fs-6">Beauty, Health & Hair</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category-card d-flex align-items-center p-3 bg-white rounded shadow-sm">
+          <img src="images/sports.png" alt="Sports" class="me-3" height="60" />
+          <span class="fs-6">Sports & Outdoor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

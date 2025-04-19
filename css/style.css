@@ -102,21 +102,16 @@ body, html {
   }
 
   nav a {
-    text-decoration: none;
-    color: black;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: rgb(19, 19, 223);
-  }
-  
-  nav a.active {
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 5px;
-  }
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Change link color */
+    padding: 30px; /* Add some padding for better spacing */
+}
+
+nav a:hover {
+    text-decoration: none; 
+    color: rgb(80, 80, 255);
+}
+
 
   /* Remove underline and set default color */
 .header-icons a {
@@ -206,4 +201,12 @@ body, html {
     transition: 0.3s ease-in-out;
   }
   
-  
+  .row {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.post {
+    margin: 15px; /* Add some margin around each post */
+}

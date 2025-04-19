@@ -69,7 +69,7 @@ session_start();
                     <div class="d-flex justify-content-end align-items-center header-icons">
                         <a href="#" class="me-3"><i class="bi bi-bar-chart"></i> Compare</a>
                         <a href="#" class="me-3"><i class="bi bi-heart"></i> Wishlist</a>
-                        <a href="#"><i class="bi bi-cart"></i> Cart</a>
+                        <a href="../cart/cart.html"><i class="bi bi-cart"></i> Cart</a>
                     </div>
                 </div>
             </div>

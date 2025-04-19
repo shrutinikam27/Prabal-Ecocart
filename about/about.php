@@ -71,12 +71,13 @@ session_start();
                         <a href="#" class="me-3">
                             <i class="bi bi-heart"></i> Wishlist
                         </a>
-                        <a href="#">
+                        <a href="../cart/cart.html">
                             <i class="bi bi-cart"></i> Cart
                         </a>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 
 
             <div class="col-md-9 d-flex align-items-center justify-content-end">
@@ -87,6 +88,17 @@ session_start();
                     <a href="/blog/blog.php" class="me-3">Blog</a>
                     <a href="about.php">About Us</a>
                 </nav>
+=======
+                <div class="col-md-9 d-flex align-items-center justify-content-end">
+                    <nav>
+                        <a href="/index.php" class="me-3">Home</a>
+                        <a href="shop/shop.php" class="me-3">Shop</a>
+                        <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
+                        <a href="/blog/blog.php" class="me-3">Blog</a>
+                        <a href="about.php">About Us</a>
+                    </nav>
+                </div>
+>>>>>>> 0fb523300412baca17d5f2714e8a9a78277882b0
             </div>
         </div>
         </div>

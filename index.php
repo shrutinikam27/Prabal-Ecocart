@@ -49,21 +49,23 @@ session_start();
 
 <body>
 
-    <header class="bg-white shadow-sm mb-3">
-        <div class="container-fluid">
-            <div class="row py-2 px-3 bg-light">
-                <div class="col-md-6">
-                    <i class="bi bi-telephone-fill"></i> Live Chat: +12 345 678 99
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="/auth.php" id="auth-link" class="text-decoration-none">
-                        <i class="bi bi-person-circle"></i> Sign In/Register
-                    </a>
-                </div>
+<header class="bg-white shadow-sm mb-3">
+    <div class="container-fluid">
+        <div class="row py-2 px-3 bg-light">
+            <div class="col-md-6">
+                <i class="bi bi-telephone-fill"></i> Live Chat: +12 345 678 99
             </div>
+            <div class="col-md-6 text-end">
+                <a href="auth.php" id="auth-link" class="text-decoration-none">
+                    <i class="bi bi-person-circle"></i> Sign In/Register
+                </a>
+            </div>
+        </div> <!-- This was not closed in your code -->
+    </div>
+</header>
 
             <div class="row align-items-center py-3 px-3">
-                <div class="col-md-3 fw-bold fs-4 text-primary">eCocart</div>
+                <div class="col-md-3 fw-bo  ld fs-4 text-primary">eCocart</div>
                 <div class="col-md-6">
                     <div class="position-relative">
                         <input type="text" class="form-control" placeholder="Search Product" />

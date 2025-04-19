@@ -394,7 +394,7 @@ session_start();
 
             <div class="product-container">
                 <div class="product-gallery">
-                    <img src="../images/head.png" width="500" height="500" alt="Headphones">
+                    <img src="../images/hd.png" width="500" height="500" alt="Headphones">
                 </div>
                 <div class="product-details-container">
 

@@ -469,7 +469,7 @@ session_start();
 
                             <div class="icons">
                                 <ul class="global-list">
-                                    <li><a href="#" class="btn btn-primary">Add to cart</a></li>
+                                    <li><a href="cart/cart.php" class="btn btn-primary">Add to cart</a></li>
                                     <li><a href="#"><span><i class="far fa-heart"></i></span></a></li>
                                     <li><a href="#"><span><i class="fas fa-random"></i></span></a></li>
                                 </ul>

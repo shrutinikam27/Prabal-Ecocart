@@ -459,9 +459,14 @@ session_start();
                             <p>16 orders in last 30 days</p>
                         </div>
 
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
+                        <form method="POST" action="../cart/cart.php">
+                            <input type="hidden" name="product_id" value="info2" />
+                            <input type="hidden" name="product_name" value="Apple Watch Series 7 45mm Sports Band" />
+                            <input type="hidden" name="product_price" value="700.00" />
+                            <button type="submit" class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </form>
 
                         <hr>
 

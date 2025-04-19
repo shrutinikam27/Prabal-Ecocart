@@ -1,3 +1,8 @@
+<?php
+// You can handle form submissions here using $_POST if needed
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,39 +71,36 @@
                         <a href="#" class="me-3">
                             <i class="bi bi-heart"></i> Wishlist
                         </a>
-                        <a href="#">
+                        <a href="../cart/cart.html">
                             <i class="bi bi-cart"></i> Cart
                         </a>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 
-            <div class="row bg-secondary-subtle px-3 py-2">
-                <div class="col-md-3 position-relative">
-                    <button class="btn btn-outline-secondary w-100" id="toggleButton">☰ All Categories</button>
-                    <ul class="list-group position-absolute d-none" id="categoryMenu">
-                        <li class="list-group-item"><a href="#" data-category="All Offers">All Offers</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Fashion & Clothing">Fashion &
-                                Clothing</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Computer Accessories">Computer
-                                Accessories</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Shoes">Shoes</a></li>
-                        <li class="list-group-item"><a href="#" data-category="Jewelry & Watches">Jewelry & Watches</a>
-                        </li>
-                        <li class="list-group-item"><a href="#" data-category="Sports & Outdoor">Sports & Outdoor</a>
-                        </li>
-                    </ul>
-                </div>
+
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <nav>
+                    <a href="/index.php" class="me-3">Home</a>
+                    <a href="shop/shop.php" class="me-3">Shop</a>
+                    <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
+                    <a href="/blog/blog.php" class="me-3">Blog</a>
+                    <a href="about.php">About Us</a>
+                </nav>
+=======
                 <div class="col-md-9 d-flex align-items-center justify-content-end">
                     <nav>
-                        <a href="/index.html" class="me-3">Home</a>
-                        <a href="shop/shop.html" class="me-3">Shop</a>
-                        <a href="/giftvoucher.html" class="me-3">Gift Voucher</a>
-                        <a href="/blog/blog.html" class="me-3">Blog</a>
-                        <a href="about.html">About Us</a>
+                        <a href="/index.php" class="me-3">Home</a>
+                        <a href="shop/shop.php" class="me-3">Shop</a>
+                        <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
+                        <a href="/blog/blog.php" class="me-3">Blog</a>
+                        <a href="about.php">About Us</a>
                     </nav>
                 </div>
+>>>>>>> 0fb523300412baca17d5f2714e8a9a78277882b0
             </div>
+        </div>
         </div>
     </header>
 

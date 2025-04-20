@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -481,10 +483,11 @@
                             <p>16 orders in last 30 days</p>
                         </div>
 
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-
+                        <a href="cart/cart.php" class="add-to-cart-link">
+                            <button class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </a>
                         <hr>
 
                         <div class="returns-info">

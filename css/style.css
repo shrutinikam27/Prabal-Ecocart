@@ -1,212 +1,233 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url('../images/back.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 2s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 75%;
+  width: 100%;
+  padding: 100px 0;
+  /* spacing for breathing room */
+  text-align: center;
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.hero button {
+  margin-top: 2rem;
+}
+
+#categoryMenu {
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.hero p,
+.hero button {
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-bar-icons a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  /* This removes the underline */
+}
+
+.top-bar-icons i {
+  margin-right: 6px;
+  color: #333;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .top-bar-icons {
+    text-align: center;
+    margin-top: 10px;
   }
 
-  .hero {
-    height: 100vh;
-    background-image: url('../images/back.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-image 2s ease-in-out;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    height: 75%;
-    width: 100%;
-    padding: 100px 0; /* spacing for breathing room */
-    text-align: center;
-  }
-
-  
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  
-  .hero-overlay {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .hero h2 {
-    font-size: 3rem;
-    font-weight: 600;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    width: 100%;
-  }
-  
-  .hero button {
-    margin-top: 2rem;
-  }
-  
-  #categoryMenu {
-    z-index: 1000;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-  }
-  
-  .hero p,
-  .hero button {
-    font-family: 'Poppins', sans-serif;
-  }
-  
   .top-bar-icons a {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: #333;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none; /* This removes the underline */
+    display: block;
+    margin: 5px 0;
   }
-  
-  .top-bar-icons i {
-    margin-right: 6px;
-    color: #333;
-    font-size: 16px;
-  }
-  
-  @media (max-width: 767px) {
-    .top-bar-icons {
-      text-align: center;
-      margin-top: 10px;
-    }
-  
-    .top-bar-icons a {
-      display: block;
-      margin: 5px 0;
-    }
-  }
+}
 
-  nav a {
-    text-decoration: none; /* Remove underline from links */
-    color: #000; /* Change link color */
-    padding: 30px; /* Add some padding for better spacing */
+nav a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #000;
+  /* Change link color */
+  padding: 30px;
+  /* Add some padding for better spacing */
+
 }
 
 nav a:hover {
-    text-decoration: none; 
-    color: rgb(80, 80, 255);
+  text-decoration: none;
+  color: rgb(80, 80, 255);
 }
 
 
-  /* Remove underline and set default color */
+/* Remove underline and set default color */
 .header-icons a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
-  }
-  
-  /* Hover effect with blue color */
-  .header-icons a:hover {
-    color: #007bff; /* Bootstrap blue */
-  }
-  
-  .category-card img {
-    width: 60px;
-    height: auto;
-  }
-  
-  .category-card {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  }
-  
-  .carousel-item img {
-    height: 250px;
-    object-fit: cover;
-  }
-  
-  .dropdown-menu {
-    z-index: 1050 !important;
-  }
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
 
-  .header, .navbar {
-    overflow: visible !important;
-  }
+/* Hover effect with blue color */
+.header-icons a:hover {
+  color: #007bff;
+  /* Bootstrap blue */
+}
 
-  .convenience-slider {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow-x: auto; /* Optional: makes it scrollable on smaller screens */
-  }
-  
-  .convenience-slider li {
-    flex: 1 1 auto;
-    min-width: 200px; /* Ensures a consistent width for each item */
-  }
-  
-  .convenience {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  }
-  
-  .convenience .icon {
-    font-size: 24px;
-    color: #007bff;
-  }
-  
-  .convenience .text span {
-    font-weight: bold;
-    display: block;
-  }
-  
-  .convenience .text p {
-    margin: 0;
-    font-size: 14px;
-    color: #666;
-  }
-  .card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transform: scale(1.02);
-    transition: 0.3s ease-in-out;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: center; /* Center the items horizontally */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+.category-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.category-card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.dropdown-menu {
+  z-index: 1050 !important;
+}
+
+.header,
+.navbar {
+  overflow: visible !important;
+}
+
+.convenience-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+  /* Optional: makes it scrollable on smaller screens */
+}
+
+.convenience-slider li {
+  flex: 1 1 auto;
+  min-width: 200px;
+  /* Ensures a consistent width for each item */
+}
+
+.convenience {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.convenience .icon {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.convenience .text span {
+  font-weight: bold;
+  display: block;
+}
+
+.convenience .text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  /* Center the items horizontally */
+  flex-wrap: wrap;
+  /* Allow items to wrap to the next line */
 }
 
 .post {
-    margin: 15px; /* Add some margin around each post */
+  margin: 15px;
+  /* Add some margin around each post */
 }

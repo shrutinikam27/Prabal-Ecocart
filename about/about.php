@@ -72,16 +72,18 @@
                     </div>
                 </div>
             </div>
-                <div class="col-md-9 d-flex align-items-center justify-content-end">
-                    <nav>
-                        <a href="/index.php" class="me-3">Home</a>
-                        <a href="shop/shop.php" class="me-3">Shop</a>
-                        <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
-                        <a href="/blog/blog.php" class="me-3">Blog</a>
-                        <a href="about.php">About Us</a>
-                    </nav>
-                </div>
+
+
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <nav>
+                    <a href="/index.html" class="me-3">Home</a>
+                    <a href="shop/shop.html" class="me-3">Shop</a>
+                    <a href="/giftvoucher.html" class="me-3">Gift Voucher</a>
+                    <a href="/blog/blog.html" class="me-3">Blog</a>
+                    <a href="about.html">About Us</a>
+                </nav>
             </div>
+        </div>
         </div>
     </header>
 

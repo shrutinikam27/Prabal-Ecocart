@@ -127,7 +127,6 @@
         .product-details-container {
             flex: 1;
             max-width: 600px;
-            /* Increase this value */
         }
 
         .product-header h1 {
@@ -146,6 +145,26 @@
             margin-right: 15px;
         }
 
+        .interactive-rating {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .star {
+            cursor: pointer;
+            color: #ccc;
+        }
+
+        .star.filled {
+            color: #f39c12;
+        }
+
+        .rating-text {
+            font-size: 14px;
+            color: #333;
+            margin-top: 5px;
+        }
+
         .actions {
             display: flex;
             gap: 15px;
@@ -160,21 +179,17 @@
         .product-info {
             background: white;
             padding: 25px;
-            /* Increase padding */
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .product-header h1 {
             font-size: 24px;
-            /* Increase font size */
             margin-bottom: 15px;
-            /* Increase margin */
         }
 
         .product-meta {
             font-size: 16px;
-            /* Increased font size */
         }
 
         .best-seller {
@@ -234,7 +249,6 @@
         .product-description,
         .product-specs {
             font-size: 16px;
-            /* Increased font size */
         }
 
         .product-specs p {
@@ -312,7 +326,7 @@
         }
 
         .add-to-cart {
-            background-color: #e74c3c;
+            background-color: #e he74c3c;
             color: white;
             border: none;
             padding: 12px 25px;
@@ -347,12 +361,10 @@
 
             .product-gallery {
                 flex: 0 0 40%;
-                /* Adjust this value to control the image size */
             }
 
             .product-details-container {
                 flex: 1;
-                /* This will allow it to take up more space */
             }
         }
     </style>
@@ -401,6 +413,14 @@
                                 <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
                                 <a href="#"><i class="far fa-heart"></i> Wishlist</a>
                             </div>
+                        </div>
+                        <div class="interactive-rating" data-product-id="trendy_shoes">
+                            <i class="fas fa-star star" data-value="1"></i>
+                            <i class="fas fa-star star" data-value="2"></i>
+                            <i class="fas fa-star star" data-value="3"></i>
+                            <i class="fas fa-star star" data-value="4"></i>
+                            <i class="fas fa-star star" data-value="5"></i>
+                            <div class="rating-text">No ratings yet</div>
                         </div>
                     </div>
 
@@ -483,11 +503,52 @@
     </div>
 
     <script>
-        // Example: conditionally reverse layout (e.g., based on user setting or feature flag)
         document.addEventListener("DOMContentLoaded", function () {
-            const condition = true; // Replace with real condition
+            // Existing layout reverse logic
+            const condition = true;
             if (condition) {
                 document.querySelector('.product-container').classList.add('reverse');
+            }
+
+            // Rating system logic
+            const ratingContainer = document.querySelector('.interactive-rating');
+            const productId = ratingContainer.getAttribute('data-product-id');
+            const stars = ratingContainer.querySelectorAll('.star');
+            const ratingText = ratingContainer.querySelector('.rating-text');
+
+            // Load existing ratings from localStorage
+            const ratings = JSON.parse(localStorage.getItem(`ratings_${productId}`)) || [];
+            updateRatingDisplay(stars, ratingText, ratings);
+
+            // Add click event to stars
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const rating = parseInt(star.getAttribute('data-value'));
+                    ratings.push(rating);
+                    localStorage.setItem(`ratings_${productId}`, JSON.stringify(ratings));
+                    updateRatingDisplay(stars, ratingText, ratings);
+                });
+            });
+
+            function updateRatingDisplay(stars, ratingText, ratings) {
+                if (ratings.length === 0) {
+                    ratingText.textContent = 'No ratings yet';
+                    stars.forEach(star => star.classList.remove('filled'));
+                    return;
+                }
+
+                // Calculate average rating
+                const average = ratings.reduce((sum, r) => sum + r, 0) / ratings.length;
+                const roundedAverage = Math.round(average);
+
+                // Update star display
+                stars.forEach(star => {
+                    const value = parseInt(star.getAttribute('data-value'));
+                    star.classList.toggle('filled', value <= roundedAverage);
+                });
+
+                // Update rating text
+                ratingText.textContent = `Average Rating: ${average.toFixed(1)} (${ratings.length} reviews)`;
             }
         });
     </script>

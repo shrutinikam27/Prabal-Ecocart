@@ -112,7 +112,7 @@ session_start();
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <a href="#" class="add-banner">
+                <a href="/shop.php" class="add-banner">
                     <img src="images/of1.jpg" alt="Image" class="img-fluid" />
                 </a>
             </div>
@@ -134,7 +134,8 @@ session_start();
 <section class="container my-5">
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h4 class="fw-semibold">Popular Categories</h4>
-        <a href="#" class="text-decoration-none text-primary">All Categories <i class="bi bi-arrow-right"></i></a>
+        <a href="shop/shop.php" class="text-decoration-none text-primary">All Categories <i
+                class="bi bi-arrow-right"></i></a>
     </div>
     <div class="row g-4">
         <div class="col-md-4">
@@ -186,7 +187,7 @@ session_start();
                 <li class="col-md-4 mb-4" data-category="All Offers, Fashion & Clothing, Computer Accessories">
                     <div class="sg-product">
                         <div class="product-thumb">
-                            <a href="details.html"><img src="images/product/1.png" alt="Image" class="img-fluid"></a>
+                            <a href="shop/shop.php"><img src="images/product/1.png" alt="Image" class="img-fluid"></a>
                         </div>
                         <div class="product-info">
                             <div class="sg-rating">
@@ -199,7 +200,7 @@ session_start();
                                 </ul>
                             </div>
                             <span class="price"><del>$450.00</del> $320.00</span>
-                            <h3><a href="#">Apple MacBook Air Retina Display...</a></h3>
+                            <h3><a href="shop/shop.php">Apple MacBook Air Retina Display...</a></h3>
                             <div class="icons">
                                 <ul class="global-list">
                                     <li><a href="#"><span><i class="far fa-heart"></i></span></a></li>
@@ -227,7 +228,7 @@ session_start();
                                 </ul>
                             </div>
                             <span class="price"><del>$50.00</del> $25.00</span>
-                            <h3><a href="#">Trendy Shoes For Man With High Quality...</a></h3>
+                            <h3><a href="shop/shop.php">Trendy Shoes For Man With High Quality...</a></h3>
                             <div class="icons">
                                 <ul class="global-list">
                                     <li><a href="#"><span><i class="far fa-heart"></i></span></a></li>
@@ -243,7 +244,7 @@ session_start();
                 <li>
                     <div class="sg-product">
                         <div class="product-thumb">
-                            <a href="details.html"><img src="images/product/3.png" alt="Image" class="img-fluid"></a>
+                            <a href="shop/shop.php"><img src="images/product/3.png" alt="Image" class="img-fluid"></a>
                         </div>
                         <div class="product-info">
                             <div class="sg-rating">
@@ -256,7 +257,7 @@ session_start();
                                 </ul>
                             </div>
                             <span class="price"><del>$110.00</del> $30.00</span>
-                            <h3><a href="#">Wireless Bluetooth Headphones...</a></h3>
+                            <h3><a href="shop/shop.php">Wireless Bluetooth Headphones...</a></h3>
                             <div class="icons">
                                 <ul class="global-list">
                                     <li><a href="#"><span><i class="far fa-heart"></i></span></a></li>
@@ -343,7 +344,7 @@ session_start();
                                 </ul>
                             </div>
                             <span class="price"><del>$150.00</del> $85.00</span>
-                            <h3><a href="#">Stylish Short Sleeve T-shirt for Men...</a></h3>
+                            <h3><a href="shop/shop.php">Stylish Short Sleeve T-shirt for Men...</a></h3>
                             <div class="icons">
                                 <ul class="global-list">
                                     <li><a href="#"><span><i class="far fa-heart"></i></span></a></li>
@@ -359,7 +360,7 @@ session_start();
                 <li>
                     <div class="sg-product">
                         <div class="product-thumb">
-                            <a href="details.html"><img src="images/product/b1.png" alt="Image" class="img-fluid"></a>
+                            <a href="shop/shop.php"><img src="images/product/b1.png" alt="Image" class="img-fluid"></a>
                         </div>
                         <div class="product-info">
                             <div class="sg-rating">
@@ -372,7 +373,7 @@ session_start();
                                 </ul>
                             </div>
                             <span class="price"><del>$250.00</del> $195.00</span>
-                            <h3><a href="#">Calvin Klein Men's Slim Fit Suit...</a></h3>
+                            <h3><a href="shop/shop.php">Calvin Klein Men's Slim Fit Suit...</a></h3>
                             <div class="icons">
                                 <ul class="global-list">
                                     <li><a href="#"><span><i class="far fa-heart"></i></span></a></li>
@@ -401,7 +402,7 @@ session_start();
                                 </ul>
                             </div>
                             <span class="price"><del>$900.00</del> $720.00</span>
-                            <h3><a href="#">Women's Wedding Dress for Bride Lace...</a></h3>
+                            <h3><a href="shop/shop.php">Women's Wedding Dress for Bride Lace...</a></h3>
                             <div class="icons">
                                 <ul class="global-list">
                                     <li><a href="#"><span><i class="far fa-heart"></i></span></a></li>
@@ -416,7 +417,7 @@ session_start();
                 </li>
             </ul>
             <div class="view-more">
-                <a href="#">View All <span class="icon fas fa-arrow-right"></span></a>
+                <a href="shop/shop.php">View All <span class="icon fas fa-arrow-right"></span></a>
             </div>
         </div>
     </div>
@@ -426,7 +427,7 @@ session_start();
         <div class="sa-box">
             <div class="title justify-content-between">
                 <h1>Flash Sale</h1>
-                <a href="#">View All <span class="icon fas fa-arrow-right"></span></a>
+                <a href="shop/shop.php">View All <span class="icon fas fa-arrow-right"></span></a>
             </div>
             <ul class="products grid-4">
                 <li>
@@ -513,7 +514,7 @@ session_start();
                                 </ul>
                             </div>
                             <span class="price"><del>$445.00</del> $355.00</span>
-                            <h3><a href="#">Withings ScanWatch - Hybrid Smartwatch with ECG</a></h3>
+                            <h3><a href="shop/shop.php">Withings ScanWatch - Hybrid Smartwatch with ECG</a></h3>
 
                             <div class="icons">
                                 <ul class="global-list">
@@ -561,7 +562,8 @@ session_start();
                                 </ul>
                             </div>
                             <span class="price"><del>$150.00</del> $85.00</span>
-                            <h3><a href="#">Ball Gowns White Ivory Tulle Bridal Dress For Wedding Dresses</a></h3>
+                            <h3><a href="shop/shop.php">Ball Gowns White Ivory Tulle Bridal Dress For Wedding
+                                    Dresses</a></h3>
 
                             <div class="icons">
                                 <ul class="global-list">
@@ -609,7 +611,7 @@ session_start();
                                 </ul>
                             </div>
                             <span class="price"><del>$150.00</del> $85.00</span>
-                            <h3><a href="#">Traditional Crystal Wedding Temple Choker Jewelry Set</a></h3>
+                            <h3><a href="shop/shop.php">Traditional Crystal Wedding Temple Choker Jewelry Set</a></h3>
 
                             <div class="icons">
                                 <ul class="global-list">

@@ -396,6 +396,14 @@ session_start();
                             <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
                             <a href="#"><i class="far fa-heart"></i> Wishlist</a>
                         </div>
+                        <div class="interactive-rating" data-product-id="trendy_shoes">
+                            <i class="fas fa-star star" data-value="1"></i>
+                            <i class="fas fa-star star" data-value="2"></i>
+                            <i class="fas fa-star star" data-value="3"></i>
+                            <i class="fas fa-star star" data-value="4"></i>
+                            <i class="fas fa-star star" data-value="5"></i>
+                            <div class="rating-text">No ratings yet</div>
+                        </div>
                     </div>
 
                     <div class="product-info">

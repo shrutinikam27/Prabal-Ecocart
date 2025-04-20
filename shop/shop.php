@@ -38,26 +38,36 @@
 <body>
 
     <header class="bg-white shadow-sm mb-3">
-        <div class="container-fluid">
-            <div class="row py-2 px-3 bg-light">
-                <div class="col-md-6">
-                    <i class="bi bi-telephone-fill"></i> Live Chat: +12 345 678 99
+        <!-- Add this search modal near the top of your body -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Search Products</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search products..." 
+                           aria-label="Search products" aria-describedby="basic-addon2">
+                    <button class="btn btn-primary" type="button" id="searchButton">Search</button>
                 </div>
-                <div class="col-md-6 text-end">
-                    <a href="#" class="text-decoration-none">
-                        <i class="bi bi-person-circle"></i> Sign In/Register
-                    </a>
+<<<<<<< HEAD
+                <div id="searchResults" class="row g-3">
+                    <!-- Search results will appear here -->
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
-            <div class="row align-items-center py-3 px-3">
-                <div class="col-md-3 fw-bold fs-4 text-primary">eCocart</div>
-                <div class="col-md-6">
-                    <div class="position-relative">
-                        <input type="text" class="form-control" placeholder="Search Product" />
-                        <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 search-icon"></i>
-                    </div>
-                </div>
+<!-- Modify your existing search input to trigger the modal -->
+<div class="position-relative">
+    <input type="text" class="form-control" placeholder="Search Product" data-bs-toggle="modal" 
+           data-bs-target="#searchModal" id="mainSearchInput"/>
+    <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 search-icon"></i>
+</div>
+=======
                 <div class="col-md-3 text-end">
                     <div class="d-flex justify-content-end align-items-center header-icons">
                         <a href="#" class="me-3">
@@ -85,6 +95,7 @@
             </div>
         </div>
         </div>
+>>>>>>> 7a2c7bb481aaac50145cece69bd8f36f4f835210
     </header>
 
     <!-- Product Grid Section (Centered with 6 Images) -->

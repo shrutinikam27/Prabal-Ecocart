@@ -1,114 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Product Search</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Search</title>
+    <!-- Add this search modal near the top of your body -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search Products</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input
+                            type="text"
+                            id="searchInput"
+                            class="form-control"
+                            placeholder="Search products..."
+                            aria-label="Search products"
+                            aria-describedby="basic-addon2"
+                        />
+                        <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+                    </div>
+                    <div id="searchResults" class="row g-3">
+                        <!-- Search results will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    #searchInput {
-      padding: 10px;
-      width: 250px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    #searchButton {
-      padding: 10px 20px;
-      border: none;
-      background-color: #007bff;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    #productList {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .product-card {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: center;
-      border-radius: 10px;
-      width: 150px;
-    }
-
-    .product-card img {
-      width: 100px;
-      height: auto;
-    }
-
-    .hidden {
-      display: none;
-    }
-  </style>
+    <!-- Modify your existing search input to trigger the modal -->
+    <div class="position-relative">
+        <input
+            type="text"
+            class="form-control"
+            placeholder="Search Product"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+            id="mainSearchInput"
+        />
+        <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 search-icon"></i>
+    </div>
 </head>
+
 <body>
+    <div class="container">
+        <h1>Product Search</h1>
 
-  <h1>Search Product</h1>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search products..." id="searchInput" />
+            <button class="search-btn" id="searchBtn">Search</button>
+        </div>
 
-  <!-- Search Input -->
-  <input type="text" id="searchInput" placeholder="Search Product" />
-  <button id="searchButton">Search</button>
+        <div class="filter-container">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="electronics">Electronics</button>
+            <button class="filter-btn" data-category="clothing">Clothing</button>
+            <button class="filter-btn" data-category="home">Home</button>
+            <button class="filter-btn" data-category="accessories">Accessories</button>
+        </div>
 
-  <!-- Product List -->
-  <div id="productList">
-    <div class="product-card" data-name="Attack Air VaporMax Flyknit 3">
-      <img src="https://via.placeholder.com/100x100?text=Shoes" alt="Shoe Image">
-      <p>Attack Air VaporMax Flyknit 3</p>
+        <div class="results-container" id="resultsContainer">
+            <!-- Products will be displayed here -->
+        </div>
     </div>
-    <div class="product-card" data-name="Nike Revolution 6">
-      <img src="https://via.placeholder.com/100x100?text=Nike" alt="Nike Image">
-      <p>Nike Revolution 6</p>
-    </div>
-    <div class="product-card" data-name="Adidas EcoBoost">
-      <img src="https://via.placeholder.com/100x100?text=Adidas" alt="Adidas Image">
-      <p>Adidas EcoBoost</p>
-    </div>
-  </div>
-  <form class =></form>
 
-  <script>
-    const searchInput = document.getElementById("searchInput");
-    const searchButton = document.getElementById("searchButton");
-    const productCards = document.querySelectorAll(".product-card");
+    <script>
+        // Product data
+        const products = [
+            {
+                id: 1,
+                name: "shoes",
+                price: 1299.99,
+                category: "electronics",
+                image: "shoes.png",
+            },
+            {
+                id: 2,
+                name: "Headphones",
+                price: 799.99,
+                category: "electronics",
+                image: "head.png",
+            },
+            {
+                id: 3,
+                name: "watch",
+                price: 199.99,
+                category: "electronics",
+                image: "watch.png",
+            },
+            {
+                id: 4,
+                name: "Jewelry",
+                price: 24.99,
+                category: "clothing",
+                image: "jewelry.png",
+            },
+            {
+                id: 5,
+                name: "Speaker",
+                price: 59.99,
+                category: "clothing",
+                image: "speaker.png",
+            },
+            {
+                id: 6,
+                name: "Dress",
+                price: 12.99,
+                category: "home",
+                image: "dress.png",
+            },
+        ];
 
-    function searchProduct() {
-      const query = searchInput.value.toLowerCase().trim();
+        // DOM elements
+        const searchInput = document.getElementById("searchInput");
+        const searchBtn = document.getElementById("searchBtn");
+        const resultsContainer = document.getElementById("resultsContainer");
+        const filterBtns = document.querySelectorAll(".filter-btn");
 
-      let found = false;
-      productCards.forEach(card => {
-        const name = card.getAttribute("data-name").toLowerCase();
-        if (name.includes(query)) {
-          card.classList.remove("hidden");
-          found = true;
-        } else {
-          card.classList.add("hidden");
+        // Current filter
+        let currentFilter = "all";
+        let currentSearchTerm = "";
+
+        // Initialize the page
+        document.addEventListener("DOMContentLoaded", () => {
+            displayProducts(products);
+
+            // Search button click event
+            searchBtn.addEventListener("click", () => {
+                currentSearchTerm = searchInput.value.trim().toLowerCase();
+                filterProducts();
+            });
+
+            // Search input enter key event
+            searchInput.addEventListener("keyup", (e) => {
+                if (e.key === "Enter") {
+                    currentSearchTerm = searchInput.value.trim().toLowerCase();
+                    filterProducts();
+                }
+            });
+
+            // Filter button click events
+            filterBtns.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach((b) => b.classList.remove("active"));
+                    // Add active class to clicked button
+                    btn.classList.add("active");
+
+                    currentFilter = btn.dataset.category;
+                    filterProducts();
+                });
+            });
+        });
+
+        // Filter products based on search term and category
+        function filterProducts() {
+            let filteredProducts = products;
+
+            // Apply category filter
+            if (currentFilter !== "all") {
+                filteredProducts = filteredProducts.filter(
+                    (product) => product.category === currentFilter
+                );
+            }
+
+            // Apply search term filter
+            if (currentSearchTerm) {
+                filteredProducts = filteredProducts.filter(
+                    (product) =>
+                        product.name.toLowerCase().includes(currentSearchTerm) ||
+                        product.category.toLowerCase().includes(currentSearchTerm)
+                );
+            }
+
+            displayProducts(filteredProducts);
         }
-      });
 
-      // Optional: Show message if no products found
-      if (!found) {
-        alert("No products found.");
-      }
-    }
+        // Display products in the results container
+        function displayProducts(productsToDisplay) {
+            resultsContainer.innerHTML = "";
 
-    searchButton.addEventListener("click", searchProduct);
+            if (productsToDisplay.length === 0) {
+                resultsContainer.innerHTML = `
+                    <div class="no-results">
+                        <h3>No products found</h3>
+                        <p>Try a different search term or category</p>
+                    </div>
+                `;
+                return;
+            }
 
-    searchInput.addEventListener("keypress", function (e) {
-      if (e.key === "Enter") {
-        searchProduct();
-      }
-    });
-  </script>
-
+            productsToDisplay.forEach((product) => {
+                const productCard = document.createElement("div");
+                productCard.className = "product-card";
+                productCard.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" class="product-image" />
+                    <div class="product-info">
+                        <h3 class="product-name">${product.name}</h3>
+                        <p class="product-price">$${product.price.toFixed(2)}</p>
+                        <span class="product-category">${product.category}</span>
+                    </div>
+                `;
+                resultsContainer.appendChild(productCard);
+            });
+        }
+    </script>
 </body>
 </html>

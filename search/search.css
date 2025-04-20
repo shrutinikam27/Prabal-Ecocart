@@ -1,0 +1,62 @@
+/* Search Modal Styles */
+#searchModal .modal-content {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#searchModal .modal-header {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 1.5rem;
+}
+
+#searchModal .modal-body {
+    padding: 1.5rem;
+}
+
+.search-product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.search-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.search-product-img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.search-product-info {
+    padding: 15px;
+}
+
+.search-product-price {
+    font-weight: 600;
+    color: #28a745;
+}
+
+.search-product-old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+#searchResults .col-md-4 {
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-product-img {
+        height: 120px;
+    }
+}

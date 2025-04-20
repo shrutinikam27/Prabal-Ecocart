@@ -373,17 +373,15 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">eComart</div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Gift Voucher</a></li>
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
+            <div class="col-md-9 d-flex align-items-center justify-content-end">
+                <nav>
+                    <a href="index.php" class="me-3">Home</a>
+                    <a href="shop/shop.php" class="me-3">Shop</a>
+                    <a href="giftvoucher.php" class="me-3">Gift Voucher</a>
+                    <a href="blog/blog.php" class="me-3">Blog</a>
+                    <a href="about/about.php">About Us</a>
+                </nav>
+            </div>
         </header>
 
         <div class="main-content">
@@ -401,7 +399,7 @@
 
             <div class="product-container">
                 <div class="product-gallery">
-                    <img src="../images/speaker.png" width="500" height="500" alt="Speaker">
+                    <img src="images/speaker.png" width="500" height="500" alt="Speaker">
                 </div>
                 <div class="product-details-container">
 

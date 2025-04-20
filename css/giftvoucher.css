@@ -1,24 +1,28 @@
-
 body {
     background-color: #f2f3f7;
     font-family: 'Segoe UI', sans-serif;
 }
+
 .sidebar {
     background: #fff;
     min-height: 100vh;
     border-right: 1px solid #ddd;
 }
+
 .sidebar a {
     display: block;
     padding: 10px 15px;
     color: #333;
     text-decoration: none;
 }
-.sidebar a:hover, .sidebar a.active {
+
+.sidebar a:hover,
+.sidebar a.active {
     background: #e9f0ff;
     border-left: 3px solid #007bff;
     color: #007bff;
 }
+
 .coupon-box {
     background: #222;
     color: #fff;
@@ -27,15 +31,57 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.coupon-box img {
-    height: 80px;
-}
-.coupon-box h5 {
-    color: #1e90ff;
-}
-.btn-outline-light {
-    border-radius: 30px;
-    padding: 5px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
 }
 
+.coupon-box:hover {
+    background-color: #333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.coupon-box img {
+    height: 80px;
+    border-radius: 8px;
+}
+
+.coupon-box h5 {
+    color: #1e90ff;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.coupon-box p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: #ccc;
+}
+
+.btn-outline-light {
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-weight: 600;
+    color: #1e90ff;
+    border: 2px solid #1e90ff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .coupon-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .coupon-box img {
+        margin-top: 15px;
+        height: 60px;
+        width: auto;
+    }
+}

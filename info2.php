@@ -380,43 +380,22 @@ session_start();
             </nav>
         </header>
 
-        <div class="main-content">
-            <aside class="sidebar">
-                <h3>All CATEGORIES</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Gift Voucher</a></li>
-                    <li><a href="#">Page</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </aside>
 
-            <div class="product-container">
-                <div class="product-gallery">
-                    <img src="../images/watch.png" width="500" height="500" alt="Trendy watch">
-                </div>
-                <div class="product-details-container">
 
-                    <div class="product-header">
-<<<<<<< HEAD:info2.php
-                        <h1>Apple Watch Series 7 45mm Sports Band...
-                            <div class="product-meta">
-                                <span class="rating">4.5 <i class="fas fa-star"></i> (128 reviews)</span>
-                                <div class="actions">
-                                    <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
-                                    <a href="#"><i class="far fa-heart"></i> Wishlist</a>
-                                </div>
-=======
-                        <h1>Apple Watch Series 7 45mm Sports Band...</h1>
-                        <div class="product-meta">
-                            <span class="rating">4.5 <i class="fas fa-star"></i> (128 reviews)</span>
-                            <div class="actions">
-                                <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
-                                <a href="#"><i class="far fa-heart"></i> Wishlist</a>
->>>>>>> 0fb523300412baca17d5f2714e8a9a78277882b0:info2.html
-                            </div>
+        <div class="product-container">
+            <div class="product-gallery">
+                <img src="../images/watch.png" width="500" height="500" alt="Trendy watch">
+            </div>
+            <div class="product-details-container">
+
+                <div class="product-header">
+                    <h1>Apple Watch Series 7 45mm Sports Band...</h1>
+                    <div class="product-meta">
+                        <span class="rating">4.5 <i class="fas fa-star"></i> (128 reviews)</span>
+                        <div class="actions">
+                            <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                            <a href="#"><i class="far fa-heart"></i> Wishlist</a>
+                        </div>
                     </div>
 
                     <div class="product-info">
@@ -427,15 +406,9 @@ session_start();
                                 <li>Brand: Original Foom</li>
                                 <li>SKU: COO214457</li>
                                 <li>
-<<<<<<< HEAD:info2.php
-                                    <span class="original-price">1000.00</span>
-                                    <span class="price">$700.00</span>
-
-=======
                                     <span class="original-price">$1000.00</span>
                                     <span class="price">$700</span>
-                                   
->>>>>>> 0fb523300412baca17d5f2714e8a9a78277882b0:info2.html
+
                                 </li>
                             </ul>
                         </div>
@@ -486,9 +459,14 @@ session_start();
                             <p>16 orders in last 30 days</p>
                         </div>
 
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
+                        <form method="POST" action="../cart/cart.php">
+                            <input type="hidden" name="product_id" value="info2" />
+                            <input type="hidden" name="product_name" value="Apple Watch Series 7 45mm Sports Band" />
+                            <input type="hidden" name="product_price" value="700.00" />
+                            <button type="submit" class="add-to-cart">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </form>
 
                         <hr>
 

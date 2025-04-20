@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,7 +66,7 @@
                         <a href="#" class="me-3">
                             <i class="bi bi-heart"></i> Wishlist
                         </a>
-                        <a href="../cart/cart.html">
+                        <a href="../cart/cart.php">
                             <i class="bi bi-cart"></i> Cart
                         </a>
                     </div>
@@ -80,16 +78,14 @@
                 <nav>
                     <a href="/index.php" class="me-3">Home</a>
                     <a href="shop/shop.php" class="me-3">Shop</a>
-                    <a href="/giftvoucher.php" class="me-3">Gift Voucher</a>
-                    <a href="/blog/blog.php" class="me-3">Blog</a>
-                    <a href="/about/about.php">About Us</a>
+                    <a href="/giftvoucher.html" class="me-3">Gift Voucher</a>
+                    <a href="/blog/blog.html" class="me-3">Blog</a>
+                    <a href="/about/about.html">About Us</a>
                 </nav>
             </div>
         </div>
         </div>
     </header>
-
-
 
     <!-- Product Grid Section (Centered with 6 Images) -->
     <div class="container my-5">
@@ -115,86 +111,98 @@
                 <div class="row">
                     <!-- Product Card 1 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center" style="cursor: pointer;">
-                            <img src="../images/shoes.png" class="card-img-top mx-auto" alt="Shoes"
-                                style="width: 60%; height: auto;">
-                            <div class="card-body">
-                                <div class="text-warning mb-1">★★★★☆</div>
-                                <p><del>$50.00</del> <strong>$25.00</strong></p>
-                                <p class="card-text">Trendy Shoes For Men With High Quality...</p>
+                        <a href="../info.php" class="text-decoration-none text-dark">
+                            <div class="card h-100 text-center" style="cursor: pointer;">
+                                <img src="../images/shoes.png" class="card-img-top mx-auto" alt="Shoes"
+                                    style="width: 60%; height: auto;">
+                                <div class="card-body">
+                                    <div class="text-warning mb-1">★★★★☆</div>
+                                    <p><del>$50.00</del> <strong>$25.00</strong></p>
+                                    <p class="card-text">Trendy Shoes For Men With High Quality...</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Product Card 2 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center" style="cursor: pointer;">
-                            <img src="../images/head.png" class="card-img-top mx-auto" alt="Headphones"
-                                style="width: 60%; height: auto;">
-                            <div class="card-body">
-                                <div class="text-warning mb-1">★★★★☆</div>
-                                <p><strong>$30.00</strong></p>
-                                <p class="card-text">Wireless Bluetooth Headphones...</p>
+                        <a href="../info1.php" class="text-decoration-none text-dark">
+                            <div class="card h-100 text-center position-relative" style="cursor: pointer;">
+                                <img src="../images/hd.png" class="card-img-top mx-auto" alt="Headphones"
+                                    style="width: 60%; height: auto;">
+                                <div class="card-body">
+                                    <div class="text-warning mb-1">★★★★☆</div>
+                                    <p><strong>$30.00</strong></p>
+                                    <p class="card-text">Wireless Bluetooth Headphones...</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Product Card 3 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center" style="cursor: pointer;">
-                            <img src="../images/watch.png" class="card-img-top mx-auto" alt="Watch"
-                                style="width: 60%; height: auto;">
-                            <div class="card-body">
-                                <div class="text-warning mb-1">★★★★★</div>
-                                <p><del>$1000.00</del> <strong>$700.00</strong></p>
-                                <p class="card-text">Apple Watch Series 7 45mm Sports Band...</p>
+                        <a href="../info2.php" class="text-decoration-none text-dark">
+                            <div class="card h-100 text-center" style="cursor: pointer;">
+                                <img src="../images/watch.png" class="card-img-top mx-auto" alt="Watch"
+                                    style="width: 60%; height: auto;">
+                                <div class="card-body">
+                                    <div class="text-warning mb-1">★★★★★</div>
+                                    <p><del>$1000.00</del> <strong>$700.00</strong></p>
+                                    <p class="card-text">Apple Watch Series 7 45mm Sports Band...</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Product Card 4 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center" style="cursor: pointer;">
-                            <img src="../images/jewelry.png" class="card-img-top mx-auto" alt="Jewelry"
-                                style="width: 60%; height: auto;">
-                            <div class="card-body">
-                                <div class="text-warning mb-1">★★★☆☆</div>
-                                <p><del>$150.00</del> <strong>$85.00</strong></p>
-                                <p class="card-text">Traditional Crystal Wedding Choker Jewelry Set</p>
+                        <a href="../info3.php" class="text-decoration-none text-dark">
+                            <div class="card h-100 text-center" style="cursor: pointer;">
+                                <img src="../images/jewelry.png" class="card-img-top mx-auto" alt="Jewelry"
+                                    style="width: 60%; height: auto;">
+                                <div class="card-body">
+                                    <div class="text-warning mb-1">★★★☆☆</div>
+                                    <p><del>$150.00</del> <strong>$85.00</strong></p>
+                                    <p class="card-text">Traditional Crystal Wedding Choker Jewelry Set</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Product Card 5 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center" style="cursor: pointer;">
-                            <img src="../images/speaker.png" class="card-img-top mx-auto" alt="Speaker"
-                                style="width: 60%; height: auto;">
-                            <div class="card-body">
-                                <div class="text-warning mb-1">★★★★★</div>
-                                <p><del>$59.00</del> <strong>$48.00</strong></p>
-                                <p class="card-text">Sony SRS-XB13 Extra BASS Wireless Speaker</p>
+                        <a href="../info4.php" class="text-decoration-none text-dark">
+                            <div class="card h-100 text-center" style="cursor: pointer;">
+                                <img src="../images/speaker.png" class="card-img-top mx-auto" alt="Speaker"
+                                    style="width: 60%; height: auto;">
+                                <div class="card-body">
+                                    <div class="text-warning mb-1">★★★★★</div>
+                                    <p><del>$59.00</del> <strong>$48.00</strong></p>
+                                    <p class="card-text">Sony SRS-XB13 Extra BASS Wireless Speaker</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!-- Product Card 6 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100 text-center" style="cursor: pointer;">
-                            <img src="../images/dress.png" class="card-img-top mx-auto" alt="Dress"
-                                style="width: 60%; height: auto;">
-                            <div class="card-body">
-                                <div class="text-warning mb-1">★★★★★</div>
-                                <p><del>$150.00</del> <strong>$70.00</strong></p>
-                                <p class="card-text">Elegant Wedding Dress</p>
+                        <a href="../info5.php" class="text-decoration-none text-dark">
+                            <div class="card h-100 text-center" style="cursor: pointer;">
+                                <img src="../images/dress.png" class="card-img-top mx-auto" alt="Dress"
+                                    style="width: 60%; height: auto;">
+                                <div class="card-body">
+                                    <div class="text-warning mb-1">★★★★★</div>
+                                    <p><del>$150.00</del> <strong>$70.00</strong></p>
+                                    <p class="card-text">Elegant Wedding Dress</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+
 
     <footer class="footer-section bg-dark text-light pt-5">
         <div class="container">
@@ -325,9 +333,5 @@
 </body>
 
 <!-- Mirrored from chtstudio.com/demo/ecomart/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 May 2024 08:58:38 GMT -->
-
-</html>
-
-</body>
 
 </html>

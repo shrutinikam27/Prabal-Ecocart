@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,6 +74,7 @@
         </div>
       </div>
 
+<<<<<<< HEAD:giftvoucher.html
       
         <div class="col-md-9 d-flex align-items-center justify-content-end">
           <nav>
@@ -85,7 +85,19 @@
             <a href="/about/about.html">About Us</a>
           </nav>
         </div>
+=======
+
+      <div class="col-md-9 d-flex align-items-center justify-content-end">
+        <nav>
+          <a href="/index.php" class="me-3">Home</a>
+          <a href="shop/shop.php" class="me-3">Shop</a>
+          <a href="giftvoucher.php" class="me-3">Gift Voucher</a>
+          <a href="./blog/blog.php" class="me-3">Blog</a>
+          <a href="/about/about.php">About Us</a>
+        </nav>
+>>>>>>> a270bc3a9c944de92e65da5534e16cbadfe7caf7:giftvoucher.php
       </div>
+    </div>
     </div>
   </header>
 
